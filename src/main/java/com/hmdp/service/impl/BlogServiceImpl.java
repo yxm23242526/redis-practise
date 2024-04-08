@@ -48,7 +48,7 @@ public class BlogServiceImpl extends ServiceImpl<BlogMapper, Blog> implements IB
     private StringRedisTemplate stringRedisTemplate;
 
     @Resource
-    private IFollowService followService
+    private IFollowService followService;
     @Override
     public Result queryHotBlog(Integer current) {
         // 根据用户查询
